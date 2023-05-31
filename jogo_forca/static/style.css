@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-over-container {
+    text-align: center;
+  }
+  
+  .win-container {
+    text-align: center;
+  }
+ 
+  .word-display {
+    text-align: center;
+  }
+  
+  .letter-blank {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+  

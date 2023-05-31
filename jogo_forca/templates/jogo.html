@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>Este é um jogo da forca!</h1>
+    <p>Programado e feito em flask</p>
+
+    <div class="word-display">
+        <p>Categoria: {{ categoria }}</p>
+    {% for letra in palavra %}
+        {% if letra in letras %}
+            
+            {{ letra }}
+
+        {% else %}
+
+            <span class="letter-blank">_</span>
+
+        {% endif %}
+    {% endfor %}
+        <p> Suas vidas: {{ vidas }}</p> 
+    </div>
+
+    <form action="" method="post">
+
+        <input type="text" name="letra" maxlength="1">
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock %}
