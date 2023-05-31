@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_titulo }}</h2>
+
+<form method="POST" action="/vsearch">
+
+    <table>
+
+        <p>Utilize o formulário a seguir:</p>
+        <tr>
+            
+            <td>Frase: <input name="frase" type="TEXT" width="60"></td>
+            
+        </tr>
+        
+        <tr>
+            <td>Letras: <input name="letras" type="TEXT" value="aeiou"></td>
+        </tr>
+    </table>
+
+    <p>Para enviar, aperte o botão a seguir:</p>
+    <input value="enviar" type="SUBMIT">
+</form>
+
+{% endblock %}
