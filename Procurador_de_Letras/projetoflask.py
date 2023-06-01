@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def log_request(req='flask_request', res=''):
 
-    with open('vsearch.log', 'a') as log:
+    with open('Procurador_de_Letras/log/vsearch.log', 'a') as log:
 
         print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
 
@@ -42,7 +42,7 @@ def viewlog_page():
 
     conteudo = []
 
-    with open('vsearch.log') as log:
+    with open('Procurador_de_Letras/log/vsearch.log') as log:
 
         for line in log:
             
